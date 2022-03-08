@@ -1,0 +1,21 @@
+.gallery img{
+    display: inline-block;
+    /* border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px; */
+    /* align content: ;
+    justify content:;
+    do i wrap? */
+}
+
+body{
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
+  }
+
+  header {
+    display: flex;
+    align-content: center;
+  }
