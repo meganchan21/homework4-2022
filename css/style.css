@@ -11,9 +11,17 @@ header {
   align-items: center;
 }
 
-.nav_links{
+.nav_links a{
   flex-direction: column;
   align-items: center;
+}
+
+.nav_links a:visited{
+  color: #50C7C7;
+}
+
+.nav_links a:hover{
+  color: #50C7C7;
 }
 
 .pricing{
@@ -57,7 +65,7 @@ header {
   to {
     width: 475px;
     opacity: 1;
-  } 
+  }
 }
 
 #logo {
@@ -68,11 +76,6 @@ header {
 
 header {
   flex-direction: row;
-}
-
-#logo {
-  justify-content: space-between;
-  justify-content: flex-start;
 }
 
 nav{
@@ -110,22 +113,45 @@ nav{
 }
 
 @media print {
+
 body{
   background-image: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, serif, Arial, Helvetica, sans-serif;
 }
 
-.nav_links{
-  flex-direction: column;
+header {
+  align-items: stretch;
+}
+
+#logo{
+  align-self: center;
+}
+
+.nav_links, nav {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .gallery {
   display: none;
 }
 
-.pricing {
-  display: flex;
-  vertical-align: bottom;
+#gallery {
+  display: none;
 }
+
+.pricing {
+  vertical-align: bottom;
+  flex-wrap: nowrap;
+}
+
+.card {
+  border: 2px solid #45ADDD;
+  flex-basis: 325px;
+}
+
+
 }
