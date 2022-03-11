@@ -14,6 +14,8 @@ header {
 .nav_links a{
   flex-direction: column;
   align-items: center;
+  color: #50C7C7;
+
 }
 
 .nav_links a:visited{
@@ -151,6 +153,11 @@ header {
 .card {
   border: 2px solid #45ADDD;
   flex-basis: 325px;
+}
+
+.element::after{
+  content:"👍🏼";
+
 }
 
 
